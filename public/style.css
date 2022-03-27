@@ -1,0 +1,42 @@
+.wrapper {
+    max-width: 600px;
+    margin: auto;
+}
+
+form {
+    margin-bottom: 30px;
+
+    display: flex;
+    flex-flow: column;
+}
+
+form input, textarea {
+    margin-bottom: 20px;
+}
+
+
+.sandbox {
+    width: 100px;
+    height: 100px;
+}
+
+.sandbox > * {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
