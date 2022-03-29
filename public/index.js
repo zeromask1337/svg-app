@@ -31,6 +31,7 @@ async function loadList() {
     const list = await fetch("/list").then(res => res.json());
     const table = document.createElement("table");
     const th = Object.keys(list);
+    databaseList.innerHTML = "";
     for (let item of list) {
         table.insertAdjacentHTML("beforeend", `
             <tr>
