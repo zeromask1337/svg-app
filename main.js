@@ -26,7 +26,7 @@ app.post("/add", (req, res) => {
 
 app.get("/list", (req, res) => {
     db.query(
-        'SELECT * FROM svg',
+        'SELECT svg.id, svg.label, svg_group.name, svg.svg from svg, svg_group WHERE svg.group_id=svg_group.id;',
         (err, results) => {
             res.json(results); // results contains rows returned by server
         }

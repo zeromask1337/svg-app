@@ -1,6 +1,6 @@
 .wrapper {
     max-width: 600px;
-    margin: auto;
+    margin: 100px auto;
 }
 
 form {
@@ -12,6 +12,13 @@ form {
 
 form input, textarea {
     margin-bottom: 20px;
+}
+
+button[type = "submit"] {
+    margin: auto;
+
+    width: 100px;
+    height: 30px;
 }
 
 
@@ -39,4 +46,13 @@ td, th {
 
 tr:nth-child(even) {
     background-color: #dddddd;
+}
+
+.database-list table{
+    width: 700px;
+}
+
+#svg-cell {
+    display: flex;
+    justify-content: space-between;
 }
